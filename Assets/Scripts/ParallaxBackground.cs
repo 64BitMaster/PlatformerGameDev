@@ -21,7 +21,7 @@ public class ParallaxBackground:MonoBehaviour {
 			ParallaxLayer layer = transform.GetChild(i).GetComponent<ParallaxLayer>();
 
 			if (layer != null) {
-				layer.name = "Layer-" + i;
+				//layer.name = "Layer-" + i;
 				parallaxLayers.Add(layer);
 			}
 		}
