@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController:PhysicsObject {
 
+	public float respawnLevel = -15F;
+
 	GameObject Player;
 	Vector3 StartingPositon;
 
@@ -30,7 +32,7 @@ public class PlayerController:PhysicsObject {
 
 		targetVelocity = move * maxSpeed;
 
-		if (Player.transform.position.y < -30F) {
+		if (Player.transform.position.y < respawnLevel) {
 
 			Player.transform.position = StartingPositon;
 
