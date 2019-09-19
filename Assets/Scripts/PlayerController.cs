@@ -7,6 +7,12 @@ public class PlayerController : MonoBehaviour
 
     private float movementInputDirection;
 
+
+    
+    public float respawnLevel = -15F;
+   	GameObject Player;
+	  Vector3 StartingPositon;
+    
     private int amountOfJumpsLeft;
     private int facingDirection = 1;
 
@@ -39,6 +45,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public Transform wallCheck;
 
+
     public LayerMask whatIsGround;
 
     // Start is called before the first frame update
@@ -49,6 +56,7 @@ public class PlayerController : MonoBehaviour
         amountOfJumpsLeft = amountOfJumps;
         wallHopDirection.Normalize();
         wallJumpDirection.Normalize();
+        StartingPosition = Player.transform.position;
     }
 
     // Update is called once per frame
@@ -59,8 +67,15 @@ public class PlayerController : MonoBehaviour
         //UpdateAnimations();
         CheckIfCanJump();
         CheckIfWallSliding();
+        CheckOutOfBounds();
     }
 
+
+    private void CheckOutOfBounds() {
+      if (Player.transform.position.y < respawnLevel) {
+      Player.transform.position = StartingPosition;
+      }
+    }
     private void FixedUpdate()
     {
         ApplyMovement();
