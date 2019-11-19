@@ -1,0 +1,1159 @@
+fileFormatVersion: 2
+guid: 3eb594ce012ec5a48b306e6ecbd8e485
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1105646274603910203
+    second: animationGameDev 1_0
+  - first:
+      213: 3653192697348280568
+    second: animationGameDev 1_1
+  - first:
+      213: 4100921682273620023
+    second: animationGameDev 1_2
+  - first:
+      213: -3353233783656864305
+    second: animationGameDev 1_3
+  - first:
+      213: -5608179157484158611
+    second: animationGameDev 1_4
+  - first:
+      213: 8484512557732959068
+    second: animationGameDev 1_5
+  - first:
+      213: 3004515574827780703
+    second: animationGameDev 1_6
+  - first:
+      213: 6214400837561525458
+    second: animationGameDev 1_7
+  - first:
+      213: 2784727018600600729
+    second: animationGameDev 1_8
+  - first:
+      213: -8331618608254170269
+    second: animationGameDev 1_9
+  - first:
+      213: 1807254979099194885
+    second: animationGameDev 1_10
+  - first:
+      213: -6167763318753647214
+    second: animationGameDev 1_11
+  - first:
+      213: 4327545560081983512
+    second: animationGameDev 1_12
+  - first:
+      213: -2918911752388990138
+    second: animationGameDev 1_13
+  - first:
+      213: 115754352104419918
+    second: animationGameDev 1_14
+  - first:
+      213: -3922680763134603369
+    second: animationGameDev 1_15
+  - first:
+      213: -9194305367549800913
+    second: animationGameDev 1_16
+  - first:
+      213: 8812073560664159543
+    second: animationGameDev 1_17
+  - first:
+      213: 8670578303580419318
+    second: animationGameDev 1_18
+  - first:
+      213: -4250036277658664984
+    second: animationGameDev 1_19
+  - first:
+      213: 161663963070066765
+    second: animationGameDev 1_20
+  - first:
+      213: 5239988450076587677
+    second: animationGameDev 1_21
+  - first:
+      213: -4579227827301114983
+    second: animationGameDev 1_22
+  - first:
+      213: 1106785333730517335
+    second: animationGameDev 1_23
+  - first:
+      213: -535763046616214451
+    second: animationGameDev 1_24
+  - first:
+      213: -8808783344355594291
+    second: animationGameDev 1_25
+  - first:
+      213: 2540253209532444281
+    second: animationGameDev 1_26
+  - first:
+      213: -7205993681946958327
+    second: animationGameDev 1_27
+  - first:
+      213: 7518470759328580968
+    second: animationGameDev 1_28
+  - first:
+      213: 5651337977484465192
+    second: animationGameDev 1_29
+  - first:
+      213: 6518460637792944551
+    second: animationGameDev 1_30
+  - first:
+      213: -84683085215617833
+    second: animationGameDev 1_31
+  - first:
+      213: -7997324946912740355
+    second: animationGameDev 1_32
+  - first:
+      213: -653413718575906363
+    second: animationGameDev 1_33
+  - first:
+      213: -6842042025236923130
+    second: animationGameDev 1_34
+  - first:
+      213: -3421201067060032122
+    second: animationGameDev 1_35
+  - first:
+      213: 5548132441633413026
+    second: animationGameDev 1_36
+  - first:
+      213: -1893434695679806707
+    second: animationGameDev 1_37
+  - first:
+      213: 8818135246670620214
+    second: animationGameDev 1_38
+  - first:
+      213: 6515649699231059583
+    second: animationGameDev 1_39
+  - first:
+      213: -4421626863267238695
+    second: animationGameDev 1_40
+  - first:
+      213: 7301670907687211009
+    second: animationGameDev 1_41
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animationGameDev 1_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 3932
+        width: 620
+        height: 598
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051d91a0f0699f041b41dec6e840b0bc
+      internalID: -1105646274603910203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_1
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 3931
+        width: 494
+        height: 597
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4380a4144a94c1a42a0d8a6e868e91f3
+      internalID: 3653192697348280568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_2
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 3937
+        width: 522
+        height: 515
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e8285e790c01f4cb597f06e94a288c
+      internalID: 4100921682273620023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_3
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 3870
+        width: 381
+        height: 604
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba2f7c2272d3c64a981495b7ae69750
+      internalID: -3353233783656864305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_4
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 3902
+        width: 518
+        height: 586
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab49e097249f89438023ca21300b114
+      internalID: -5608179157484158611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_5
+      rect:
+        serializedVersion: 2
+        x: 2885
+        y: 3842
+        width: 270
+        height: 745
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba2a16e607d490438d858df593adaa0
+      internalID: 8484512557732959068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_6
+      rect:
+        serializedVersion: 2
+        x: 3262
+        y: 3861
+        width: 267
+        height: 649
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ad66bb6a230bc4fb9154feb17dfd0b
+      internalID: 3004515574827780703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_7
+      rect:
+        serializedVersion: 2
+        x: 3635
+        y: 3865
+        width: 242
+        height: 649
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a839883d4e9479344a746d725f440eff
+      internalID: 6214400837561525458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_8
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 3865
+        width: 213
+        height: 649
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69c4e2cb15d3de4cbbb22cd310cc524
+      internalID: 2784727018600600729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_9
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 3147
+        width: 432
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60499f1fd914a6640800e4658f8a1a77
+      internalID: -8331618608254170269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_10
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 3117
+        width: 462
+        height: 619
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5685a1315a316f442ac290698ce4fbb9
+      internalID: 1807254979099194885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_11
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 3133
+        width: 479
+        height: 642
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b906bdd0db839024e9b2b661531d1ccd
+      internalID: -6167763318753647214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_12
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 3159
+        width: 351
+        height: 668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6515529f3743245b95d566237f4715
+      internalID: 4327545560081983512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_13
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 3168
+        width: 464
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0c97a41069485448490c269ae19640
+      internalID: -2918911752388990138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_14
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 3136
+        width: 468
+        height: 665
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5e1839a113c5d4badf0e22bcb5766b
+      internalID: 115754352104419918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_15
+      rect:
+        serializedVersion: 2
+        x: 3326
+        y: 3083
+        width: 354
+        height: 666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ee185cab6d9054a9323ca73046eeb5
+      internalID: -3922680763134603369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_16
+      rect:
+        serializedVersion: 2
+        x: 3773
+        y: 3070
+        width: 433
+        height: 665
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a357a8be7be0f30438d11590cbdbc3e8
+      internalID: -9194305367549800913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_17
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 2460
+        width: 246
+        height: 647
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d56e03270f1f247aba59232e9a56e3
+      internalID: 8812073560664159543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_18
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 2444
+        width: 343
+        height: 644
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb28d0cfbd3f5f842bd517587f5341cc
+      internalID: 8670578303580419318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_19
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 2483
+        width: 514
+        height: 623
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139dd74cfa443a64593ca778d626462b
+      internalID: -4250036277658664984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_20
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 2474
+        width: 438
+        height: 577
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc324a65ff53f894e88137584598d5b8
+      internalID: 161663963070066765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_21
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 2436
+        width: 430
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6629690bcf4e94f83aac8df1124c1c
+      internalID: 5239988450076587677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_22
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 2452
+        width: 335
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5f0a0c49050344e99d367ad25a5163
+      internalID: -4579227827301114983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_23
+      rect:
+        serializedVersion: 2
+        x: 3055
+        y: 2437
+        width: 241
+        height: 657
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d19345ab3d86044937dfa6797de02a
+      internalID: 1106785333730517335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_24
+      rect:
+        serializedVersion: 2
+        x: 3476
+        y: 2420
+        width: 454
+        height: 656
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9df866f69971d439c7f45d026eb06e
+      internalID: -535763046616214451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_25
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1688
+        width: 338
+        height: 661
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6113bcf696549e94489cfe6c5f7bcd87
+      internalID: -8808783344355594291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_26
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1903
+        width: 390
+        height: 441
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 16, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b3e9f7b65c147489bfaf4b7a21a03a
+      internalID: 2540253209532444281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_27
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1878
+        width: 456
+        height: 461
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366b406ccced43e4ba9fb0a614e0c38f
+      internalID: -7205993681946958327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_28
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1713
+        width: 461
+        height: 728
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a84a47539996e3439755413e86432e5
+      internalID: 7518470759328580968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_29
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 1585
+        width: 338
+        height: 785
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6942a5d14e20ed540bd7502b078443cb
+      internalID: 5651337977484465192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_30
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 1637
+        width: 287
+        height: 702
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e58961fada284c44a045e9758f89fc5
+      internalID: 6518460637792944551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_31
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 1754
+        width: 297
+        height: 503
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74906c042fc2b9b49a0e544ac10e0315
+      internalID: -84683085215617833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_32
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 939
+        width: 697
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 10, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bb2727f9da9dc4f816c36bd1326603
+      internalID: -7997324946912740355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_33
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 944
+        width: 641
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33a62aa6c255d54ba95f57c0e7a8999
+      internalID: -653413718575906363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_34
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 934
+        width: 662
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 5, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd90d01dd2b627458b3dd0c8cb882aa
+      internalID: -6842042025236923130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_35
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 888
+        width: 513
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876f149466f840d43b5329eebdd2c90b
+      internalID: -3421201067060032122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_36
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 883
+        width: 666
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3526b5852259df47a1d6e81ad510149
+      internalID: 5548132441633413026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_37
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 139
+        width: 667
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3211bf7004d4aee45a96ac601bdb4567
+      internalID: -1893434695679806707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_38
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 134
+        width: 615
+        height: 641
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494ef9f970923854baea05b3abc3bef9
+      internalID: 8818135246670620214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_39
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 144
+        width: 626
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cbf76e357c065499d43636e4adf5cb
+      internalID: 6515649699231059583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_40
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 78
+        width: 451
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d6ec71aeab9ab42a1f7d7dbb3a222f
+      internalID: -4421626863267238695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_41
+      rect:
+        serializedVersion: 2
+        x: 2670
+        y: 62
+        width: 630
+        height: 621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cc04e1ff470584db8ca95765b91edf
+      internalID: 7301670907687211009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
