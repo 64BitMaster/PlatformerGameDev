@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,7 +23,7 @@ public class TriggerLedgeGrab : MonoBehaviour
         if (other.CompareTag("ledgeGrab"))
         {
             pc.isHanging = true;
-            other.attachedRigidbody.transform.position = this.transform.position;
+            other.attachedRigidbody.position = this.transform.position;
             previousWallSpeed = pc.wallSlideSpeed;
             pc.wallSlideSpeed = 0;
             other.attachedRigidbody.gravityScale = 0;

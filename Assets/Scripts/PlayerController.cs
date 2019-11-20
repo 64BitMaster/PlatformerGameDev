@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,19 +20,26 @@ public class PlayerController : MonoBehaviour
     public bool isWalking;
     public bool isGrounded;
     public bool isTouchingWall;
+    public bool isLedgeGrab;
     private bool isWallSliding;
+    public bool isWallHanging;
     public bool isHanging;
+    public bool isJumping;
     public bool canJump;
+    private bool expJump;
+    public bool isFiring;
+    public bool isAngle;
 
     private Rigidbody2D rb;
-    //private Animator anim;
-
+    private Animator anim;
+    //private Angle angle;
     public int amountOfJumps = 1;
 
     public float movementSpeed = 10.0f;
     public float jumpForce = 16.0f;
     public float groundCheckRadius;
     public float wallCheckDistance;
+    public float ledgeCheckDistance;
     public float wallSlideSpeed;
     public float movementForceInAir;
     public float airDragMultiplier = 0.95f;
@@ -45,7 +52,7 @@ public class PlayerController : MonoBehaviour
 
     public Transform groundCheck;
     public Transform wallCheck;
-
+    public Transform ledgeCheck;
 
     public LayerMask whatIsGround;
 
@@ -53,12 +60,13 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         amountOfJumpsLeft = amountOfJumps;
         wallHopDirection.Normalize();
         wallJumpDirection.Normalize();
         currentGravity = rb.gravityScale;
         StartingPosition = rb.position;
+        //angle = new Angle();
     }
 
     // Update is called once per frame
@@ -66,7 +74,7 @@ public class PlayerController : MonoBehaviour
     {
         CheckInput();
         CheckMovementDirection();
-        //UpdateAnimations();
+        UpdateAnimations();
         CheckIfCanJump();
         CheckIfWallSliding();
         CheckOutOfBounds();
@@ -88,10 +96,32 @@ public class PlayerController : MonoBehaviour
     }
     private void CheckHanging()
     {
-
+        if(isLedgeGrab && !isGrounded && rb.velocity.y <= 0 && (!isWallSliding || !isWallHanging))
+        {
+            isJumping = false;
+            isHanging = true;
+        }
+        else
+        {
+            isHanging = false;
+        }
     }
-    
 
+    private void UpdateAnimations()
+    {
+        anim.SetBool("isWalking", isWalking);
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("canJump", canJump);
+        anim.SetBool("isHanging", isHanging);
+        anim.SetBool("isJumping", isJumping);
+        anim.SetBool("isWallSliding", isWallSliding);
+        anim.SetBool("isWallHanging", isWallHanging);
+        anim.SetFloat("movementDirection",movementInputDirection);
+        anim.SetBool("isTouchingWall", isTouchingWall);
+        anim.SetBool("expJump", expJump);
+        anim.SetBool("isAngle", isAngle);
+        anim.SetBool("isFiring", isFiring);
+    }
     private void CheckIfWallSliding()
     {
         if (isTouchingWall && !isGrounded && rb.velocity.y <= 0)
@@ -109,8 +139,9 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
         isTouchingWall = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, whatIsGround);
+        isLedgeGrab = Physics2D.Raycast(ledgeCheck.position,transform.right,ledgeCheckDistance,whatIsGround);
     }
-
+    
     private void CheckIfCanJump()
     {
         if ((isGrounded && rb.velocity.y <= 0) || isWallSliding)
@@ -120,10 +151,12 @@ public class PlayerController : MonoBehaviour
 
         if (amountOfJumpsLeft <= 0)
         {
+            isJumping = true;
             canJump = false;
         }
         else
         {
+            isJumping = false;
             canJump = true;
         }
 
@@ -142,12 +175,14 @@ public class PlayerController : MonoBehaviour
 
         if (rb.velocity.x != 0)
         {
-            isWalking = true;
+            if(isGrounded)
+                isWalking = true;
         }
         else
         {
             isWalking = false;
         }
+        
     }
 
 
@@ -155,10 +190,11 @@ public class PlayerController : MonoBehaviour
     private void CheckInput()
     {
         movementInputDirection = Input.GetAxisRaw("Horizontal");
-        movementInputDirectionVert = Input.GetAxisRaw("Vertical");
+        movementInputDirectionVert = Input.GetAxis("Vertical");
 
         if (Input.GetButtonDown("Jump"))
         {
+            
             Jump();
         }
 
@@ -166,9 +202,37 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * variableJumpHeightMultiplier);
         }
+        if (Input.GetMouseButtonDown(0))
+        {
+            Fire();
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            isFiring = false;
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            isAngle = true;
+            PlayerAngle.setAngle(true);
+            
+            
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            isAngle = false;
+            PlayerAngle.setAngle(false);
+        }
 
     }
-
+    private void Fire()
+    {
+        if(!isHanging && !isWallSliding)
+        {
+            isFiring = true;
+        }
+        
+    }
     private void Jump()
     {
         if (canJump && !isWallSliding)
@@ -190,11 +254,19 @@ public class PlayerController : MonoBehaviour
             Vector2 forceToAdd = new Vector2(wallJumpForce * wallJumpDirection.x * movementInputDirection, wallJumpForce * wallJumpDirection.y);
             rb.AddForce(forceToAdd, ForceMode2D.Impulse);
         }
+        else if(isHanging){
+            Vector2 forceToAdd = new Vector2(0, 30.0f);
+            rb.AddForce(forceToAdd, ForceMode2D.Impulse);
+            isJumping = true;
+        }
     }
 
     private void ApplyMovement()
     {
-
+        if (isWallSliding)
+        {
+           isHanging = false;
+        }
         //	If Player is touching the ground, move normally through the direction you're holding
         if (isGrounded)
         {
@@ -227,6 +299,7 @@ public class PlayerController : MonoBehaviour
         {
             // If Player is Wall Sliding and holding a direction towards the wall, disable gravity for Player
             // to have them 'stick' to the wall
+            isWallHanging = true;
             rb.gravityScale = 0;
             
         }
@@ -243,23 +316,35 @@ public class PlayerController : MonoBehaviour
         else if (isWallSliding && !isHanging && movementInputDirectionVert < 0) {
             rb.velocity = new Vector2(rb.velocity.x, 2 * (-wallSlideSpeed));
         }
-        else if(isHanging){
-            
+        else if(isHanging && !isWallSliding){
+            rb.velocity = new Vector2(0,0);
+            rb.gravityScale = 0;
 
         }
-        else if (!isWallSliding)
+        else if(isHanging && expJump){
+            rb.AddForce(new Vector2(0, 10.0f));
+            expJump = false;
+        }
+        
+        else if (!isWallSliding && !isHanging)
         {
             // If player is no longer Wall Sliding, resume normal gravity
             rb.gravityScale = currentGravity;
         }
-        
+       
+
+        if (isHanging && movementInputDirectionVert < 0)
+        {
+            isWallSliding = true;
+            isHanging = false;
+        }
     }
 
     private void Flip()
     {
         if (!isWallSliding)
         {
-            facingDirection *= -1;
+            
             isFacingRight = !isFacingRight;
             transform.Rotate(0.0f, 180.0f, 0.0f);
         }
@@ -273,7 +358,7 @@ public class PlayerController : MonoBehaviour
 
         Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y, wallCheck.position.z));
 
-        
+        Gizmos.DrawLine(ledgeCheck.position, new Vector3(ledgeCheck.position.x + ledgeCheckDistance, ledgeCheck.position.y, ledgeCheck.position.z));
     }
    
 }
