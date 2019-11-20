@@ -935,6 +935,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5450576210494435590, guid: fda658ac3df38d64c9b93ef85f8b0263,
+        type: 3}
+      propertyPath: data.dataString
+      value: UEsDBBQAAAgIAACQn+s87xtfSwIAAPUEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFtVMlu2zAQ/RWD56awnKV1b63iOD1kQdwiF13G5MgiTJECl9hO4H/vkJIsxehJ0ntvhm8W6oNJ7Rrk3tilleLBCGQ/Jiy+sy+TgbzHPWyMXsl37DWvUvgqiiBpXsBLQ3gWw5yp0VvJf+qNiuIpgUHL0th6ITaYG+cdwSUoh0RZ42O0Juhjwvb0uJjHkEMX+h6fkyO9cdQe7aC77mXXn3VBcwV1gyI6HuSzk342bYWaquk00Tk3SknXWWH+0KRSc2hcoEJIICRQaclC1FcoN5WP+cbBT2Xp0HfmLRxupaUOtVnZL9O2rQa3bZ29gQqY3N0kT23Sh//w14kvranv+4OzaTzEV5JvX+DAwflRY8fw7WfnQe9AbWGt8LVC/WiW1gQtiPQ2xNDgcHY7fJ5qyyvk2wFvvfZgf25ohp6fD/IimxyPqf59rmS9jtTXqxZYKZM6nqaPlmbzmxyn3XBdCkKjjb8O/8BmvEQdcSet80R1Zerob22CjVK2SE2L5QSfG6sxwV0pDWpQ/vBMafz5EM+40bFnzB3E69Id3nH9LTgLSfCgn07PqGezO03LVWb3gK56Cl5JjYPpSDxSn3Kjdbtj4570YatgS+CjsE2Q4vNysfX8u+CZuMr4jSjnl98ubniJGYd5BjMOeFmytHxSU52gnlujXXtoanpIrmnR+r/IZGmhSfsuLOyW8r02o5ZLXZoVt4j6qc1wMo6WDqF7KRZCUoNW6L3Uad7so2DK8C2K4pSoSJUu9t5CMWQpWCPfjI9IwfL05yjYkR3/AVBLAwQUAAAICAAAkJ/rIJyaS2wAAAB3AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9Kz0FFQSi9KLMgoBgoYgjilmSkgdrRSkqVFSrJhiolhsllKmqWxua5ZclqqYXKipWGiUXJiqnGaUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACQn+s87xtfSwIAAPUEAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACQn+sgnJpLbAAAAHcAAAAJACQAAAAAAAAAAAAAAJgCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAATwMAAAAA
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fda658ac3df38d64c9b93ef85f8b0263, type: 3}
 --- !u!1 &401021663
@@ -1917,7 +1922,7 @@ GameObject:
   - component: {fileID: 1165817299}
   - component: {fileID: 1165817301}
   - component: {fileID: 1165817300}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2236,7 +2241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1525704019}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floors and Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2290,7 +2295,7 @@ GameObject:
   - component: {fileID: 1628381928}
   - component: {fileID: 1628381930}
   - component: {fileID: 1628381929}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2384,6 +2389,61 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1643223112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3312900166029583060, guid: 26eddf84c6f9f4aed991e597a06f95a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2040539684}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1643223114
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643223112}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1651629884
