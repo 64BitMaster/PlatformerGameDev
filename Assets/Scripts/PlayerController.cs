@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private int amountOfJumpsLeft;
     public int facingDirection = 1;
 
+    //Booleans for control and animation
     private bool isFacingRight = true;
     public bool isWalking;
     public bool isGrounded;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
     private bool expJump;
     public bool isFiring;
     public bool isAngle;
+    //**********************************
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -79,6 +81,7 @@ public class PlayerController : MonoBehaviour
         CheckIfWallSliding();
         CheckOutOfBounds();
         CheckHanging();
+        CheckWallHaning();
     }
 
     private void FixedUpdate()
@@ -96,7 +99,7 @@ public class PlayerController : MonoBehaviour
     }
     private void CheckHanging()
     {
-        if (isLedgeGrab && !isGrounded && rb.velocity.y <= 0 && (!isWallSliding || !isWallHanging))
+        if (isLedgeGrab && !isGrounded && rb.velocity.y <= 0 && (!isWallSliding && !isWallHanging))
         {
             isJumping = false;
             isHanging = true;
@@ -116,7 +119,7 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isJumping", isJumping);
         anim.SetBool("isWallSliding", isWallSliding);
         anim.SetBool("isWallHanging", isWallHanging);
-        anim.SetFloat("movementDirection", movementInputDirection);
+        //anim.SetFloat("movementDirection",movementInputDirection);
         anim.SetBool("isTouchingWall", isTouchingWall);
         anim.SetBool("expJump", expJump);
         anim.SetBool("isAngle", isAngle);
@@ -124,13 +127,22 @@ public class PlayerController : MonoBehaviour
     }
     private void CheckIfWallSliding()
     {
-        if (isTouchingWall && !isGrounded && rb.velocity.y <= 0)
+        if (isTouchingWall && !isGrounded && rb.velocity.y <= 0 && isHanging)
         {
             isWallSliding = true;
         }
+        
+
         else
         {
             isWallSliding = false;
+        }
+
+        if (isTouchingWall && !isHanging)
+        {
+            Debug.Log("I'm here, fortuntely.");
+            Vector2 newForce = new Vector2(rb.velocity.x, -rb.velocity.y);
+            rb.AddForce(newForce);
         }
     }
 
@@ -139,6 +151,7 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
         isTouchingWall = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, whatIsGround);
+
         isLedgeGrab = Physics2D.Raycast(ledgeCheck.position, transform.right, ledgeCheckDistance, whatIsGround);
     }
 
@@ -184,7 +197,18 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+    private void CheckWallHaning()
+    {
+        if (isWallSliding && movementInputDirection == facingDirection)
+        {
+            isWallHanging = true;
+        }
+        else
+        {
+            isWallHanging = false;
+        }
 
+    }
 
 
     private void CheckInput()
@@ -296,17 +320,18 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (isWallSliding && (movementInputDirection == facingDirection))
+        if (isWallSliding && isWallHanging)
         {
             // If Player is Wall Sliding and holding a direction towards the wall, disable gravity for Player
             // to have them 'stick' to the wall
-            isWallHanging = true;
             rb.gravityScale = 0;
 
+
         }
-        else if (isWallSliding && !isHanging && movementInputDirectionVert == 0)
+        else if (isWallSliding && !isWallHanging)
         {
             // If Player is Wall Sliding and not holding a direction towards the wall, have them slowly slip down
+
             rb.gravityScale = currentGravity;
             if (rb.velocity.y < -wallSlideSpeed)
             {
