@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 622918038809400982}
   - component: {fileID: 622918038809400983}
   - component: {fileID: 622918038809400984}
+  - component: {fileID: -4661216741482619226}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -161,9 +162,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55be4664f22b51e4d832eaefa2cc3d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   updateRate: 2
+  followDistance: 20
   speed: 1000
   fMode: 0
   nextWaypointDistance: 3
   pathIsEnded: 0
+--- !u!114 &-4661216741482619226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622918038809400985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef0990d936dc794883948f61ed4e2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bolt: {fileID: 5860405163360458300, guid: 31b3cd6ef1190d649a36272685995103, type: 3}
+  shootDistance: 10
+  delayOfFire: 20
