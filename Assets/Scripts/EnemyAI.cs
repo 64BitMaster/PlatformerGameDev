@@ -10,15 +10,13 @@ public class EnemyAI : MonoBehaviour
     private Seeker seeker;
     private Rigidbody2D rb;
     private int currentWaypoint = 0;
-
-    public Transform target;
+    private PlayerController target;
 
     public float updateRate = 2;
     public Path path;
-
+    public float followDistance = 50;
     public float speed = 300;
     public ForceMode2D fMode;
-
     public float nextWaypointDistance = 3;
 
     [HideInInspector]
@@ -30,14 +28,14 @@ public class EnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        target = FindObjectOfType<PlayerController>();
         if (target == null)
         {
             Debug.LogError("No Target");
             return;
         }
-        seeker.StartPath(transform.position, target.position, OnPathComplete);
+        seeker.StartPath(transform.position, target.transform.position, OnPathComplete);
         StartCoroutine(UpdatePath());
-
     }
 
     public void OnPathComplete(Path p)
@@ -45,17 +43,17 @@ public class EnemyAI : MonoBehaviour
         if (p.error) {
             Debug.Log(p.error);
         }
-        if(!p.error)
+
+        if (!p.error)
         {
             path = p;
             currentWaypoint = 0;
-        }
-
+        } 
     }
 
     IEnumerator UpdatePath()
     {
-        seeker.StartPath(transform.position, target.position, OnPathComplete);
+        seeker.StartPath(transform.position, target.transform.position, OnPathComplete);
         yield return new WaitForSeconds(1 / updateRate);
         StartCoroutine(UpdatePath());
     }
@@ -67,7 +65,13 @@ public class EnemyAI : MonoBehaviour
             return;
         }
 
-        if(path == null)
+        if (path == null)
+        {
+            return;
+        }
+
+        float playerDist = Vector2.Distance(transform.position, target.transform.position);
+        if (playerDist > followDistance)
         {
             return;
         }
@@ -85,7 +89,6 @@ public class EnemyAI : MonoBehaviour
         pathIsEnded = false;
         Vector2 direction = (path.vectorPath[currentWaypoint] - transform.position).normalized;
         direction *= speed * Time.fixedDeltaTime;
-        Debug.Log(direction.ToString());
         rb.AddForce(direction, fMode);
         float dist = Vector2.Distance(transform.position, path.vectorPath[currentWaypoint]);
         if (dist < nextWaypointDistance)
