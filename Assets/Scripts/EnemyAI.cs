@@ -97,4 +97,12 @@ public class EnemyAI : MonoBehaviour
             return;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.name.Contains("Bolt"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
