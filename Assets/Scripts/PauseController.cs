@@ -9,6 +9,9 @@ public class PauseController:MonoBehaviour {
     public GameObject pauseMenuCanvas;
     public GameObject playerHUD;
 
+    //public GameObject player;
+
+
 
     // Start is called before the first frame update
     void Start() {
@@ -19,7 +22,7 @@ public class PauseController:MonoBehaviour {
     void Update() {
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            if(gamePaused == true) {
+            if (gamePaused == true) {
                 Resume();
             } else {
                 Pause();
@@ -46,7 +49,15 @@ public class PauseController:MonoBehaviour {
     }
 
     public void ReturnToMenuScene() {
+        pauseMenuCanvas.SetActive(false);
+        playerHUD.SetActive(true);
+        Time.timeScale = 1F;
+        gamePaused = false;
         SceneManager.LoadScene(0);
+    }
+
+    public void RestartCurrentScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 

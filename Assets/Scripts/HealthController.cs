@@ -3,73 +3,72 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthController : MonoBehaviour
-{
-	public int maxHealth = 100;
-	int currentHealth;
-	//public bool damaged = false;
+public class HealthController:MonoBehaviour {
+    public int maxHealth = 100;
+    int currentHealth;
 
-	public Text healthUI;
-
-
-
-
+    public Text healthUI;
+    public GameObject deathOverlay;
+    public GameObject playerHUD;
 
 
     // Start is called before the first frame update
-    void Start()
-    {
-		currentHealth = maxHealth;
+    void Start() {
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-		//adjustDamageIndicator();
-		healthUI.text = currentHealth.ToString();
+    void Update() {
+        //adjustDamageIndicator();
+        healthUI.text = currentHealth.ToString();
+        adjustHUD();
     }
 
 
+    void applyDamage(int damageTaken) {
 
-	void applyDamage(int damageTaken) {
+        if (damageTaken < currentHealth) {
+            currentHealth -= damageTaken;
+        } 
+    }
 
-		if (damageTaken < currentHealth) {
-			currentHealth -= damageTaken;
-		}
-		else {
-			// Death, idk how we want to handle player death, instant respawn? Or just a normal game over screen?
-		}
+    void applyHeal(int healAmount) {
 
-		//damaged = true;
-	}
+        currentHealth += healAmount;
 
-	void applyHeal(int healAmount) {
+        // Cap heal amount to maximum health
+        if (currentHealth > maxHealth) {
+            currentHealth = maxHealth;
+        }
 
-		currentHealth += healAmount;
+    }
 
-		// Cap heal amount to maximum health
-		if (currentHealth > maxHealth) {
-			currentHealth = maxHealth;
-		}
+    void adjustHUD() {
 
-	}
+        if (currentHealth <= 0) {
+            playerHUD.SetActive(false);
+            deathOverlay.SetActive(true);
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        } else {
+            //playerHUD.SetActive(true);
+            //deathOverlay.SetActive(false);
+            //Time.timeScale = 1F;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
+        }
+    }
 
-	void adjustHUD() {
+    void adjustDamageIndicator() {
 
-	}
+        GameObject player = GameObject.Find("Player");
+        Image playerSprite = player.GetComponent<Image>();
 
-	void adjustDamageIndicator() {
+        //Color FullyOpaque = new Color(1, 1, 1, 1);
+        //Color FullyTransparent = new Color(1, 1, 1, 0);
 
-		GameObject player = GameObject.Find("Player");
-		Image playerSprite = player.GetComponent<Image>();
+        playerSprite.color = Color.Lerp(playerSprite.color,new Color(1,1,1,Mathf.PingPong(Time.time,3f)),10 * Time.deltaTime);
 
-		//Color FullyOpaque = new Color(1, 1, 1, 1);
-		//Color FullyTransparent = new Color(1, 1, 1, 0);
-
-		playerSprite.color = Color.Lerp(playerSprite.color, new Color(1, 1, 1, Mathf.PingPong(Time.time, 3f)), 10*Time.deltaTime);
-
-
-	}
-
-
+    }
 }
