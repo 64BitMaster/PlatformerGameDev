@@ -128,6 +128,39 @@ TextureImporter:
   - first:
       213: 7301670907687211009
     second: animationGameDev 1_41
+  - first:
+      213: 1749883957470343285
+    second: animationGameDev 1_42
+  - first:
+      213: -5035461864497256915
+    second: animationGameDev 1_43
+  - first:
+      213: -9126147102113120399
+    second: animationGameDev 1_44
+  - first:
+      213: -3202984358127595644
+    second: animationGameDev 1_45
+  - first:
+      213: -1536003768191945972
+    second: animationGameDev 1_46
+  - first:
+      213: 7631149247476624268
+    second: animationGameDev 1_47
+  - first:
+      213: 8038837437503981193
+    second: animationGameDev 1_48
+  - first:
+      213: 5145899159790632044
+    second: animationGameDev 1_49
+  - first:
+      213: -8330845032414065057
+    second: animationGameDev 1_50
+  - first:
+      213: -1067294752750535517
+    second: animationGameDev 1_51
+  - first:
+      213: -1956315365788432690
+    second: animationGameDev 1_52
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -264,7 +297,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 3932
+        y: 5907
         width: 620
         height: 598
       alignment: 0
@@ -285,7 +318,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 699
-        y: 3931
+        y: 5914
         width: 494
         height: 597
       alignment: 0
@@ -305,8 +338,8 @@ TextureImporter:
       name: animationGameDev 1_2
       rect:
         serializedVersion: 2
-        x: 1264
-        y: 3937
+        x: 1242
+        y: 5927
         width: 522
         height: 515
       alignment: 0
@@ -326,8 +359,8 @@ TextureImporter:
       name: animationGameDev 1_3
       rect:
         serializedVersion: 2
-        x: 1822
-        y: 3870
+        x: 1790
+        y: 5873
         width: 381
         height: 604
       alignment: 0
@@ -347,8 +380,8 @@ TextureImporter:
       name: animationGameDev 1_4
       rect:
         serializedVersion: 2
-        x: 2229
-        y: 3902
+        x: 2222
+        y: 5904
         width: 518
         height: 586
       alignment: 0
@@ -368,8 +401,8 @@ TextureImporter:
       name: animationGameDev 1_5
       rect:
         serializedVersion: 2
-        x: 2885
-        y: 3842
+        x: 2892
+        y: 5844
         width: 270
         height: 745
       alignment: 0
@@ -389,12 +422,12 @@ TextureImporter:
       name: animationGameDev 1_6
       rect:
         serializedVersion: 2
-        x: 3262
-        y: 3861
+        x: 3270
+        y: 5846
         width: 267
         height: 649
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5192304, y: 0.5158236}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,8 +443,8 @@ TextureImporter:
       name: animationGameDev 1_7
       rect:
         serializedVersion: 2
-        x: 3635
-        y: 3865
+        x: 3625
+        y: 5853
         width: 242
         height: 649
       alignment: 0
@@ -431,8 +464,8 @@ TextureImporter:
       name: animationGameDev 1_8
       rect:
         serializedVersion: 2
-        x: 3996
-        y: 3865
+        x: 3986
+        y: 5868
         width: 213
         height: 649
       alignment: 0
@@ -453,7 +486,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 44
-        y: 3147
+        y: 5129
         width: 432
         height: 705
       alignment: 0
@@ -474,7 +507,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 532
-        y: 3117
+        y: 5115
         width: 462
         height: 619
       alignment: 0
@@ -494,8 +527,8 @@ TextureImporter:
       name: animationGameDev 1_11
       rect:
         serializedVersion: 2
-        x: 1066
-        y: 3133
+        x: 1045
+        y: 5115
         width: 479
         height: 642
       alignment: 0
@@ -515,8 +548,8 @@ TextureImporter:
       name: animationGameDev 1_12
       rect:
         serializedVersion: 2
-        x: 1702
-        y: 3159
+        x: 1697
+        y: 5146
         width: 351
         height: 668
       alignment: 0
@@ -536,8 +569,8 @@ TextureImporter:
       name: animationGameDev 1_13
       rect:
         serializedVersion: 2
-        x: 2196
-        y: 3168
+        x: 2186
+        y: 5160
         width: 464
         height: 662
       alignment: 0
@@ -557,8 +590,8 @@ TextureImporter:
       name: animationGameDev 1_14
       rect:
         serializedVersion: 2
-        x: 2711
-        y: 3136
+        x: 2701
+        y: 5123
         width: 468
         height: 665
       alignment: 0
@@ -578,8 +611,8 @@ TextureImporter:
       name: animationGameDev 1_15
       rect:
         serializedVersion: 2
-        x: 3326
-        y: 3083
+        x: 3305
+        y: 5086
         width: 354
         height: 666
       alignment: 0
@@ -600,7 +633,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3773
-        y: 3070
+        y: 5057
         width: 433
         height: 665
       alignment: 0
@@ -620,8 +653,8 @@ TextureImporter:
       name: animationGameDev 1_17
       rect:
         serializedVersion: 2
-        x: 223
-        y: 2460
+        x: 217
+        y: 4450
         width: 246
         height: 647
       alignment: 0
@@ -641,8 +674,8 @@ TextureImporter:
       name: animationGameDev 1_18
       rect:
         serializedVersion: 2
-        x: 515
-        y: 2444
+        x: 509
+        y: 4440
         width: 343
         height: 644
       alignment: 0
@@ -662,8 +695,8 @@ TextureImporter:
       name: animationGameDev 1_19
       rect:
         serializedVersion: 2
-        x: 886
-        y: 2483
+        x: 880
+        y: 4479
         width: 514
         height: 623
       alignment: 0
@@ -683,8 +716,8 @@ TextureImporter:
       name: animationGameDev 1_20
       rect:
         serializedVersion: 2
-        x: 1505
-        y: 2474
+        x: 1482
+        y: 4470
         width: 438
         height: 577
       alignment: 0
@@ -704,8 +737,8 @@ TextureImporter:
       name: animationGameDev 1_21
       rect:
         serializedVersion: 2
-        x: 2034
-        y: 2436
+        x: 2040
+        y: 4438
         width: 430
         height: 705
       alignment: 0
@@ -725,8 +758,8 @@ TextureImporter:
       name: animationGameDev 1_22
       rect:
         serializedVersion: 2
-        x: 2604
-        y: 2452
+        x: 2593
+        y: 4459
         width: 335
         height: 404
       alignment: 0
@@ -746,8 +779,8 @@ TextureImporter:
       name: animationGameDev 1_23
       rect:
         serializedVersion: 2
-        x: 3055
-        y: 2437
+        x: 3044
+        y: 4421
         width: 241
         height: 657
       alignment: 0
@@ -767,8 +800,8 @@ TextureImporter:
       name: animationGameDev 1_24
       rect:
         serializedVersion: 2
-        x: 3476
-        y: 2420
+        x: 3482
+        y: 4405
         width: 454
         height: 656
       alignment: 0
@@ -788,8 +821,8 @@ TextureImporter:
       name: animationGameDev 1_25
       rect:
         serializedVersion: 2
-        x: 42
-        y: 1688
+        x: 48
+        y: 3665
         width: 338
         height: 661
       alignment: 0
@@ -809,8 +842,8 @@ TextureImporter:
       name: animationGameDev 1_26
       rect:
         serializedVersion: 2
-        x: 570
-        y: 1903
+        x: 564
+        y: 3880
         width: 390
         height: 441
       alignment: 0
@@ -830,8 +863,8 @@ TextureImporter:
       name: animationGameDev 1_27
       rect:
         serializedVersion: 2
-        x: 1098
-        y: 1878
+        x: 1081
+        y: 3861
         width: 456
         height: 461
       alignment: 0
@@ -851,8 +884,8 @@ TextureImporter:
       name: animationGameDev 1_28
       rect:
         serializedVersion: 2
-        x: 1575
-        y: 1713
+        x: 1552
+        y: 3701
         width: 461
         height: 728
       alignment: 0
@@ -872,8 +905,8 @@ TextureImporter:
       name: animationGameDev 1_29
       rect:
         serializedVersion: 2
-        x: 2108
-        y: 1585
+        x: 2125
+        y: 3556
         width: 338
         height: 785
       alignment: 0
@@ -894,7 +927,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2687
-        y: 1637
+        y: 3625
         width: 287
         height: 702
       alignment: 0
@@ -914,8 +947,8 @@ TextureImporter:
       name: animationGameDev 1_31
       rect:
         serializedVersion: 2
-        x: 3169
-        y: 1754
+        x: 3152
+        y: 3731
         width: 297
         height: 503
       alignment: 0
@@ -936,11 +969,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 939
+        y: 2918
         width: 697
         height: 605
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 10, w: 0}
       outline: []
       physicsShape: []
@@ -956,12 +989,12 @@ TextureImporter:
       name: animationGameDev 1_33
       rect:
         serializedVersion: 2
-        x: 773
-        y: 944
+        x: 767
+        y: 2929
         width: 641
         height: 595
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -978,11 +1011,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1439
-        y: 934
+        y: 2924
         width: 662
         height: 533
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 5, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -998,12 +1031,12 @@ TextureImporter:
       name: animationGameDev 1_35
       rect:
         serializedVersion: 2
-        x: 2167
-        y: 888
+        x: 2161
+        y: 2867
         width: 513
         height: 610
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1019,12 +1052,12 @@ TextureImporter:
       name: animationGameDev 1_36
       rect:
         serializedVersion: 2
-        x: 2716
-        y: 883
+        x: 2710
+        y: 2868
         width: 666
         height: 584
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1040,12 +1073,12 @@ TextureImporter:
       name: animationGameDev 1_37
       rect:
         serializedVersion: 2
-        x: 14
-        y: 139
+        x: 25
+        y: 2124
         width: 667
         height: 667
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1061,12 +1094,12 @@ TextureImporter:
       name: animationGameDev 1_38
       rect:
         serializedVersion: 2
-        x: 722
-        y: 134
+        x: 705
+        y: 2136
         width: 615
         height: 641
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1082,12 +1115,12 @@ TextureImporter:
       name: animationGameDev 1_39
       rect:
         serializedVersion: 2
-        x: 1398
-        y: 144
+        x: 1387
+        y: 2134
         width: 626
         height: 585
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1103,12 +1136,12 @@ TextureImporter:
       name: animationGameDev 1_40
       rect:
         serializedVersion: 2
-        x: 2121
-        y: 78
+        x: 2110
+        y: 2074
         width: 451
         height: 676
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1124,12 +1157,12 @@ TextureImporter:
       name: animationGameDev 1_41
       rect:
         serializedVersion: 2
-        x: 2670
-        y: 62
+        x: 2664
+        y: 2069
         width: 630
         height: 621
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1137,6 +1170,237 @@ TextureImporter:
       bones: []
       spriteID: 55cc04e1ff470584db8ca95765b91edf
       internalID: 7301670907687211009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1230
+        width: 435
+        height: 785
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbaaad76d6004e4ca1ad7c8d186073d
+      internalID: 1749883957470343285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_43
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1242
+        width: 426
+        height: 782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ddcff9ef3e6864381ab9ea5aca2a2a
+      internalID: -5035461864497256915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_44
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1223
+        width: 527
+        height: 735
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2060f97c0c98a6c4f8b2cb958480cea5
+      internalID: -9126147102113120399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_45
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 1186
+        width: 230
+        height: 788
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a68f26ae1f799547b9e51e896ca437e
+      internalID: -3202984358127595644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_46
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 1204
+        width: 404
+        height: 767
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd040f7257c190c4495358ec45298e16
+      internalID: -1536003768191945972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_47
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 416
+        width: 211
+        height: 656
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99c59b7a50d96140936fe0711160714
+      internalID: 7631149247476624268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_48
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 442
+        width: 177
+        height: 627
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539ad5563db44d241969b158e09afd24
+      internalID: 8038837437503981193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_49
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 432
+        width: 297
+        height: 552
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d92ee728dc35cc4cbf82c7f0f87ae6a
+      internalID: 5145899159790632044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_50
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 397
+        width: 457
+        height: 508
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d6f38d9151ed045bf9bb753c9487ca
+      internalID: -8330845032414065057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_51
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 451
+        width: 650
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21aed0b78e45df440b3e882bf5b9d2c1
+      internalID: -1067294752750535517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationGameDev 1_52
+      rect:
+        serializedVersion: 2
+        x: 2644
+        y: 357
+        width: 249
+        height: 767
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd82b836b44597478fc797a709c8b66
+      internalID: -1956315365788432690
       vertices: []
       indices: 
       edges: []

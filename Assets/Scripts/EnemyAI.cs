@@ -10,15 +10,14 @@ public class EnemyAI : MonoBehaviour
     private Seeker seeker;
     private Rigidbody2D rb;
     private int currentWaypoint = 0;
-
-    public Transform target;
+    private PlayerController target;
+    private bool facingRight = false;
 
     public float updateRate = 2;
     public Path path;
-
+    public float followDistance = 50;
     public float speed = 300;
     public ForceMode2D fMode;
-
     public float nextWaypointDistance = 3;
 
     [HideInInspector]
@@ -30,14 +29,14 @@ public class EnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        target = FindObjectOfType<PlayerController>();
         if (target == null)
         {
             Debug.LogError("No Target");
             return;
         }
-        seeker.StartPath(transform.position, target.position, OnPathComplete);
+        seeker.StartPath(transform.position, target.transform.position, OnPathComplete);
         StartCoroutine(UpdatePath());
-
     }
 
     public void OnPathComplete(Path p)
@@ -45,17 +44,17 @@ public class EnemyAI : MonoBehaviour
         if (p.error) {
             Debug.Log(p.error);
         }
-        if(!p.error)
+
+        if (!p.error)
         {
             path = p;
             currentWaypoint = 0;
-        }
-
+        } 
     }
 
     IEnumerator UpdatePath()
     {
-        seeker.StartPath(transform.position, target.position, OnPathComplete);
+        seeker.StartPath(transform.position, target.transform.position, OnPathComplete);
         yield return new WaitForSeconds(1 / updateRate);
         StartCoroutine(UpdatePath());
     }
@@ -67,31 +66,53 @@ public class EnemyAI : MonoBehaviour
             return;
         }
 
-        if(path == null)
+        if (path == null)
         {
             return;
         }
 
-        if (currentWaypoint >= path.vectorPath.Count)
+        float playerDist = Vector2.Distance(transform.position, target.transform.position);
+        float playerxDist = Mathf.Abs(transform.position.x - target.transform.position.x);
+        bool playerIsRight = target.transform.position.x < transform.position.x;
+        if (playerIsRight == facingRight)
         {
-            if (pathIsEnded)
+            facingRight = !facingRight;
+            transform.Rotate(0.0f, 180.0f, 0.0f);
+        }
+
+        if (playerDist < followDistance)
+        {
+            
+            if (currentWaypoint >= path.vectorPath.Count)
             {
+                if (pathIsEnded)
+                {
+                    return;
+                }
+                pathIsEnded = true;
                 return;
             }
-            pathIsEnded = true;
-            return;
-        }
 
-        pathIsEnded = false;
-        Vector2 direction = (path.vectorPath[currentWaypoint] - transform.position).normalized;
-        direction *= speed * Time.fixedDeltaTime;
-        Debug.Log(direction.ToString());
-        rb.AddForce(direction, fMode);
-        float dist = Vector2.Distance(transform.position, path.vectorPath[currentWaypoint]);
-        if (dist < nextWaypointDistance)
+            pathIsEnded = false;
+            Vector2 direction = (path.vectorPath[currentWaypoint] - transform.position).normalized;
+            direction *= speed * Time.fixedDeltaTime;
+            if (playerxDist < 10)
+                direction.x = 0;
+            rb.AddForce(direction, fMode);
+            float dist = Vector2.Distance(transform.position, path.vectorPath[currentWaypoint]);
+            if (dist < nextWaypointDistance)
+            {
+                currentWaypoint++;
+                return;
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.name.Contains("Bolt") && !col.name.Contains("enemy"))
         {
-            currentWaypoint++;
-            return;
+            Destroy(gameObject);
         }
     }
 }

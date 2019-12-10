@@ -58,6 +58,7 @@ public class PauseController:MonoBehaviour {
 
     public void RestartCurrentScene() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1F;
     }
 
 

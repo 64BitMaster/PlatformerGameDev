@@ -3,55 +3,74 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthController:MonoBehaviour {
+public class HealthController : MonoBehaviour
+{
     public int maxHealth = 100;
-    int currentHealth;
-
-    public Text healthUI;
+    public int currentHealth;
+    //public bool damaged = false;
     public GameObject deathOverlay;
     public GameObject playerHUD;
+    public Text healthUI;
+    private PlayerController pc;
+
+
+
 
 
     // Start is called before the first frame update
-    void Start() {
+    void Start()
+    {
         currentHealth = maxHealth;
+        pc = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         //adjustDamageIndicator();
         healthUI.text = currentHealth.ToString();
-        adjustHUD();
     }
 
 
-    void applyDamage(int damageTaken) {
 
-        if (damageTaken < currentHealth) {
+    public void applyDamage(int damageTaken)
+    {
+
+        if (damageTaken <= currentHealth)
+        {
             currentHealth -= damageTaken;
-        } 
+        }
+
+
+        //damaged = true;
     }
 
-    void applyHeal(int healAmount) {
+    public void applyHeal(int healAmount)
+    {
 
         currentHealth += healAmount;
 
         // Cap heal amount to maximum health
-        if (currentHealth > maxHealth) {
+        if (currentHealth > maxHealth)
+        {
             currentHealth = maxHealth;
         }
 
     }
 
-    void adjustHUD() {
+    void adjustHUD()
+    {
 
-        if (currentHealth <= 0) {
+        if (currentHealth <= 0)
+        {
             playerHUD.SetActive(false);
             deathOverlay.SetActive(true);
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-        } else {
+        }
+        else
+        {
             //playerHUD.SetActive(true);
             //deathOverlay.SetActive(false);
             //Time.timeScale = 1F;
@@ -60,7 +79,8 @@ public class HealthController:MonoBehaviour {
         }
     }
 
-    void adjustDamageIndicator() {
+    void adjustDamageIndicator()
+    {
 
         GameObject player = GameObject.Find("Player");
         Image playerSprite = player.GetComponent<Image>();
@@ -68,7 +88,10 @@ public class HealthController:MonoBehaviour {
         //Color FullyOpaque = new Color(1, 1, 1, 1);
         //Color FullyTransparent = new Color(1, 1, 1, 0);
 
-        playerSprite.color = Color.Lerp(playerSprite.color,new Color(1,1,1,Mathf.PingPong(Time.time,3f)),10 * Time.deltaTime);
+        playerSprite.color = Color.Lerp(playerSprite.color, new Color(1, 1, 1, Mathf.PingPong(Time.time, 3f)), 10 * Time.deltaTime);
+
 
     }
+
+
 }

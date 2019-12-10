@@ -12,8 +12,14 @@ public class FireBolt : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         velX = speed;
-        if (PlayerAngle.getAngle())
+        if (PlayerAngle.getAngle() && !PlayerAngle.getIsUp())
             velY = speed;
+        else if (PlayerAngle.getIsUp())
+        {
+            velY = speed;
+            velX = 0;
+        }
+            
         else
             velY = 0f;
 

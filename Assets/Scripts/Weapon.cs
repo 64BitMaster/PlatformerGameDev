@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
     // Start is called before the first frame update
     public Transform firePoint;
     public Transform firePoint45;
+    public Transform firePointUp;
     public GameObject bolt;
     public PlayerController pc;
     public static float speed = 20f;
@@ -35,6 +36,7 @@ public class Weapon : MonoBehaviour
         else if (Input.GetMouseButtonUp(0))
         {
             shoot = false;
+            frames = 0;
         }
         if (shoot)
         {
@@ -49,9 +51,10 @@ public class Weapon : MonoBehaviour
     }
     void Shoot()
     {
-        if (pc.isAngle)
+        if (pc.isUp)
+            Instantiate(bolt, firePointUp.position, firePointUp.rotation);
+        else if(pc.isAngle)
             Instantiate(bolt, firePoint45.position, firePoint45.rotation);
-            
         else
             Instantiate(bolt,firePoint.position,firePoint.rotation);
     }
