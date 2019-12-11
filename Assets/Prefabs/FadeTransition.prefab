@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2920726291192482751}
   - component: {fileID: 2920726291192482720}
   - component: {fileID: 2920726291192482721}
-  - component: {fileID: 2920726291192482750}
+  - component: {fileID: 1495237899}
   m_Layer: 5
   m_Name: BlackFade
   m_TagString: Untagged
@@ -96,7 +96,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2920726291192482750
+--- !u!114 &1495237899
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,10 +105,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2920726291192482723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f17f7f01c3ff49c681d64330418da7e, type: 3}
+  m_Script: {fileID: 11500000, guid: 15f134ab7232b47cb88cb12bbace3bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2920726291192482721}
+  playerHUD: {fileID: 0}
+  deathOverlay: {fileID: 0}
 --- !u!1 &2920726291764857948
 GameObject:
   m_ObjectHideFlags: 0
