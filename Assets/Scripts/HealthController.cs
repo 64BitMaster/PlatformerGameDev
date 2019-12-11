@@ -40,6 +40,9 @@ public class HealthController : MonoBehaviour
         {
             currentHealth -= damageTaken;
         }
+        else {
+            currentHealth = 0;
+        }
 
 
         //damaged = true;
